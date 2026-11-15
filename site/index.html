@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1019">
+  <meta name="description" content="เปิดเกม FROSTBOUND และ Halloween สำหรับทีม StudentOS พร้อมแบบฟอร์มรายงานผลการเล่น">
+  <title>SOS Games | Team Playtest</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./feedback.js"></script>
+</head>
+<body>
+  <header class="top wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>SOS <span>GAMES</span></a>
+    <a class="nav-link" href="#feedback">ส่งผลการทดสอบ <span aria-hidden="true">↘</span></a>
+  </header>
+  <main class="wrap">
+    <div class="intro">
+      <p class="eyebrow"><span aria-hidden="true"></span> StudentOS Team Playtest</p>
+      <h1>เลือกเกม<span>.</span><br>แล้วออกสำรวจ</h1>
+      <p class="subtitle">ฝ่าดินแดนน้ำแข็ง หรือเดินทางข้ามสี่โลกในคืนฮาโลวีน</p>
+    </div>
+    <div class="games" aria-label="เกมสำหรับทดสอบ">
+      <article class="game frost">
+        <div class="art"><img src="./assets/title.webp" alt=""></div>
+        <div class="game-body">
+          <p class="version">v4.2</p>
+          <h2>FROSTBOUND</h2>
+          <p class="description">แอ็กชันโร้กไลก์ในอาณาจักรน้ำแข็ง จับจังหวะหลบและโต้กลับใน Story, Hardcore หรือ Boss Rush</p>
+          <a class="play" href="../frostbound-game/">เล่น FROSTBOUND <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="game halloween">
+        <div class="art"><img src="./assets/scene-hub.webp" alt=""></div>
+        <div class="game-body">
+          <p class="version">2026.10.30 · Playtest 1</p>
+          <h2>Halloween Event</h2>
+          <p class="description">สำรวจสี่ไบโอมในคืนฮาโลวีน ทำเควส สะสม Candy และเก็บรางวัลจากมินิเกม</p>
+          <a class="play" href="../halloween-game/">เล่น Halloween <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </div>
+    <section id="feedback" class="feedback">
+      <div>
+        <h2>ส่งผลการทดสอบ</h2>
+        <p>คัดลอกแบบรายงาน เติมรายละเอียด แล้วส่งในช่องที่ทีม StudentOS ใช้คุยกัน ถ้าเจอบั๊ก ให้แนบภาพและบอกขั้นตอนที่ทำให้เกิดซ้ำ</p>
+      </div>
+      <div class="feedback-actions">
+        <button type="button" id="copy" hidden>คัดลอกแบบรายงาน <span aria-hidden="true">↗</span></button>
+        <details id="template">
+          <summary>ดูแบบรายงาน</summary>
+          <label class="visually-hidden" for="report">แบบรายงานผลการทดสอบ</label>
+          <textarea readonly id="report" rows="9">เกมและเวอร์ชัน
+โหมดหรือด่าน
+เบราว์เซอร์และอุปกรณ์
+บั๊กที่พบและขั้นตอนให้เกิดซ้ำ
+ความยาก (1–5) และเหตุผล
+ความชัดเจนของ UI (1–5)
+ความสนุก (1–5)
+ข้อเสนอแนะ</textarea>
+        </details>
+        <p id="copy-status" role="status"></p>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">SOS Games <span>StudentOS Development Team</span></footer>
+</body>
+</html>
